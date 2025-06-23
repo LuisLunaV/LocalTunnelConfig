@@ -46,4 +46,19 @@ pm2 start app.js --name miapp
 ```
 lt --port 8000 --subdomain tunelunico123
 ```
+- Cambia 8000 por el puerto donde corre tu app.
 
+- Cambia tunelunico123 por un subdominio único (minúsculas, sin espacios).
+
+Esto mostrará una URL pública, por ejemplo:
+
+```
+https://tunelunico123.loca.lt
+```
+
+## 6. Desbloquear la URL si pide contraseña
+Si al acceder te muestra una pantalla pidiendo contraseña, obtén la IP pública de tu servidor:
+
+```
+curl https://loca.lt/mytunnelpassword
+```
