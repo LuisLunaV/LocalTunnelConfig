@@ -62,3 +62,16 @@ Si al acceder te muestra una pantalla pidiendo contraseña, obtén la IP públic
 ```
 curl https://loca.lt/mytunnelpassword
 ```
+## 7. Mantener LocalTunnel corriendo con pm2 (opcional)
+Para que LocalTunnel se ejecute en segundo plano y arranque con el sistema:
+```
+pm2 start "lt --port 8000 --subdomain tunelunico123" --name localtunnel
+pm2 save
+pm2 startup
+```
+
+## 8. Parar LocalTunnel con pm2
+
+```
+pm2 stop localtunnel
+```
